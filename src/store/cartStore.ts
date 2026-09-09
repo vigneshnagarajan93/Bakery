@@ -36,8 +36,10 @@ export const useCartStore = create<CartState>((set, get) => ({
     const existingItemIndex = state.items.findIndex(item => item.variantId === variant.id);
 
     if (existingItemIndex > -1) {
-      const newItems = [...state.items];
-      newItems[existingItemIndex].quantity += quantity;
+      // properly map to avoid mutation
+      const newItems = state.items.map((item, index) =>
+        index === existingItemIndex ? { ...item, quantity: item.quantity + quantity } : item
+      );
       return { items: newItems, isOpen: true }; // open cart on add
     }
 
