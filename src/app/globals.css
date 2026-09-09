@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+
+  --color-linen: #FBF9F5;
+  --color-espresso: #1E1A17;
+  --color-terracotta: #9C4A2F;
+  --color-semolina: #EFE6D5;
+  --color-wild-herb: #4B5B47;
+
+  --color-background: var(--color-linen);
+  --color-foreground: var(--color-espresso);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+    cursor: default;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
