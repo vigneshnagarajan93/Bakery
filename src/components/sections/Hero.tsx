@@ -60,7 +60,7 @@ export function Hero() {
       <div className="absolute inset-0 pointer-events-none z-0">
         <img
           ref={bgRef}
-          src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2500&auto=format&fit=crop"
+          src="/IMG_20260909_152152.png"
           alt="Artisan bakery background"
           className="w-full h-[120%] object-cover object-center absolute -top-[10%] brightness-[0.6]"
         />
