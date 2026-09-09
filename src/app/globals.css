@@ -5,12 +5,12 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
 
-  /* Updated to richer coffee/cream palette */
-  --color-linen: #FDFBF7; /* Lighter cream */
-  --color-espresso: #4A1523; /* Changed from Coffee Brown to deep Burgundy */
-  --color-terracotta: #A65A42;
-  --color-semolina: #F2EBE1;
-  --color-wild-herb: #556B4E;
+  /* Updated to pure Burgundy/Blush palette, eliminating all browns */
+  --color-linen: #FCFAFB; /* Burgundy-tinted cool cream */
+  --color-espresso: #4A1523; /* Deep Burgundy base */
+  --color-terracotta: #9B2B43; /* Bright Ruby/Burgundy accent */
+  --color-semolina: #F2E4E7; /* Pale blush/burgundy-tinted background */
+  --color-wild-herb: #556B4E; /* Keeping the herb accent as a green contrast, as it's not brown */
 
   --color-background: var(--color-linen);
   --color-foreground: var(--color-espresso);

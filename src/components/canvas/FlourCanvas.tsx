@@ -54,7 +54,8 @@ function Particles({ count = 2000 }) {
   return (
     <instancedMesh ref={mesh} args={[undefined, undefined, count]}>
       <dodecahedronGeometry args={[0.02, 0]} />
-      <meshBasicMaterial color="#EFE6D5" transparent opacity={0.6} />
+      {/* Updated to use the new Burgundy semolina hex color */}
+      <meshBasicMaterial color="#F2E4E7" transparent opacity={0.6} />
     </instancedMesh>
   );
 }
